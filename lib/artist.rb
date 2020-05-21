@@ -24,6 +24,14 @@ class Artist
   def songs
    Song.all.select {|song| song.artist == self}
   end
-binding.pry
+
+  def self.find_or_create_by_name(name)
+    search = selfall.find {|artist| artist.name == name}
+    if search == nil 
+      new_artist = self.new(name)
+    else 
+      search 
+    end 
+  end
 
 end
