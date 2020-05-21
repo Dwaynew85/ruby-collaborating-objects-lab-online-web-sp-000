@@ -18,9 +18,10 @@ class Song
   end
 # binding.pry
   def self.new_by_filename(filename)
-    # creat new instance of a song from the file that's passed
-    # associates new song instance with the artist from the filename
-    new_song = filename.split(" - ")
+    file = filename.split(" - ")
+    artist_name = Artist.new(file[0])
+    song = Song.new(file[1])
+    song.artist = artist_name
   end
 
   def artist_name=(name)
