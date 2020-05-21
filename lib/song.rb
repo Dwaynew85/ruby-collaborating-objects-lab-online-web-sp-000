@@ -1,5 +1,4 @@
-require_relative './lib/artist.rb'
-require 'pry'
+# require 'pry'
 class Song
   attr_accessor :name, :artist
 
@@ -17,12 +16,10 @@ class Song
   def self.all
     @@all
   end
-binding.pry
+# binding.pry
   def self.new_by_filename(filename)
-    song = self.new
-    song.name = filename.split(" - ")[1]
-    song.artist = song_file[0]
-    song
+    new_song = filename.split(" - ")
+    
   end
 
 end
