@@ -27,7 +27,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    search = selfall.find {|artist| artist.name == name}
+    search = self.all.find {|artist| artist.name == name}
     if search == nil
       new_artist = self.new(name)
     else
