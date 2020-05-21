@@ -29,3 +29,11 @@ class Song
   end
 
 end
+
+jigga = Song.new("Jigga That N")
+carter = Song.new("S dot Carter")
+world = Song.new("Cole World")
+champ = Song.new("Grand Champ")
+life = Song.new("My Life")
+fruit = Song.new("Forbiden Fruit")
+jordan = Song.new("Michael Jordan")
