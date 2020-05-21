@@ -33,5 +33,6 @@ class Artist
       search
     end
   end
+  binding.pry
 
 end
