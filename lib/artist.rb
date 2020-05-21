@@ -1,4 +1,5 @@
 require 'pry'
+require './lib/song.rb'
 class Artist
   attr_accessor :name
 
@@ -39,3 +40,4 @@ dmx = Artist.new("DMX")
 jay = Artist.new("Jay Z")
 cole = Artist.new("J-Cole")
 kenny = Artist.new("Kendrick Lamar")
+binding.pry 
