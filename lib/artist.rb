@@ -33,6 +33,10 @@ class Artist
       search
     end
   end
+  dmx = Artist.new("DMX")
+  jay = Artist.new("Jay Z")
+  cole = Artist.new("J-Cole")
+  kenny = Artist.new("Kendrick Lamar")
   binding.pry
 
 end
